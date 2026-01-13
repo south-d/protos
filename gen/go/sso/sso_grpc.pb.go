@@ -21,7 +21,7 @@ const _ = grpc.SupportPackageIsVersion9
 const (
 	Auth_Register_FullMethodName = "/auth.Auth/Register"
 	Auth_Login_FullMethodName    = "/auth.Auth/Login"
-	Auth_IsAdmin_FullMethodName  = "/auth.Auth/isAdmin"
+	Auth_IsAdmin_FullMethodName  = "/auth.Auth/IsAdmin"
 )
 
 // AuthClient is the client API for Auth service.
@@ -188,7 +188,7 @@ var Auth_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _Auth_Login_Handler,
 		},
 		{
-			MethodName: "isAdmin",
+			MethodName: "IsAdmin",
 			Handler:    _Auth_IsAdmin_Handler,
 		},
 	},
